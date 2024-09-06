@@ -1,5 +1,5 @@
 FROM tiangolo/uvicorn-gunicorn-fastapi
-COPY app.py /app/app.py
+COPY src/app.py /app/app.py
 COPY requirements.txt /app/requirements.txt
 RUN pip install -r /app/requirements.txt
 WORKDIR /app
