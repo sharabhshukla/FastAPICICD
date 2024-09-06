@@ -61,6 +61,6 @@ jobs:
             GHCR_PAT: ${{ secrets.GHCR_TOKEN }}
           run: |
             echo $GHCR_PAT | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-            docker build -t ghcr.io/${{ github.repository_owner }}/${{ github.repository }}:v0.0.1 .
-            docker push ghcr.io/${{ github.repository_owner }}/${{ github.repository }}:v0.0.1
+            docker build -t ghcr.io/${{ github.repository_owner }}/${{ github.repository }}/webapi:v0.0.1 .
+            docker push ghcr.io/${{ github.repository_owner }}/${{ github.repository }}/webapi:v0.0.1
     
